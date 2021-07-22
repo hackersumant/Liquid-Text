@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+.liquid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #183954;
+}
+.liquid h2 {
+  font-size: 26vw;
+  position: absolute;
+}
+
+.liquid h2:nth-child(1) {
+  color: #fff;
+  text-shadow: -4px 4px 0px #183954, -6px 6px 0px #183954, -8px 8px 0px #183954,
+    -18px 18px 20px rgb(0, 0, 0, 0.5), -18px 18px 50px rgb(0, 0, 0, 0.5);
+}
+.liquid h2:nth-child(2) {
+  color: #2166f3;
+  opacity: 0.5;
+  animation: animate 3s ease-in-out infinite;
+}
+.liquid h2:nth-child(3) {
+  opacity: 0.5;
+  color: #2166f3;
+  animation: animate 6s ease-in-out infinite;
+}
+.liquid h2:nth-child(4) {
+  color: #2166f3;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 46%,
+      16% 45%,
+      34% 52%,
+      50% 61%,
+      68% 65%,
+      85% 61%,
+      100% 53%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 59%,
+      18% 67%,
+      36% 70%,
+      51% 66%,
+      66% 56%,
+      82% 49%,
+      100% 45%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
